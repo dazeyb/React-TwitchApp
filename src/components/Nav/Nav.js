@@ -1,8 +1,6 @@
 import "./Nav.css";
 
 function Nav(props) {
-  const { username, avatar } = props.user;
-
   return (
     <header className='header'>
       <nav className='header__left'>
@@ -26,7 +24,15 @@ function Nav(props) {
         </a>
       </nav>
       <nav className='header__right'>
-        <img className='user' src={avatar} alt='user avatar' />
+        {props.user ? (
+          // <> </> this is a fragement so we can return two elements
+          <>
+            <img className='user' src={props.user.avatar} alt='user avatar' />
+            <button onClick={props.logout}>Logout</button>
+          </>
+        ) : (
+          <button onClick={props.login}>Login</button>
+        )}
       </nav>
     </header>
   );
