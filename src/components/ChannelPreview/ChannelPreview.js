@@ -1,3 +1,5 @@
+import "./ChannelPreview.css";
+
 function Tag(props) {
   return <span className='tag'>{props.tag}</span>;
 }
@@ -21,13 +23,20 @@ function ChannelPreview(props) {
 
   return (
     <div className='Channel-Preview'>
-      <img src={previewChannel} alt='preview' />
-      <span className='viewer_count'>{viewerCount}</span>
-      <h4>{title}</h4>
-      <img src={avatar} alt='avatar' />
-      <h5>{username}</h5>
-      <h5>{category}</h5>
-      <div className='tags'>{generateTags(tags)}</div>
+      <div className='channel__image'>
+        <img src={previewChannel} alt='preview' />
+        <div className='color-backdrop'></div>
+        <span className='viewer_count'>{viewerCount}k viewers</span>
+      </div>
+      <div className='channel__info'>
+        <img src={avatar} alt='avatar' />
+        <div className='channel__info__details'>
+          <h4>{title}</h4>
+          <h5>{username}</h5>
+          <h5>{category}</h5>
+          <div className='tags'>{generateTags(tags)}</div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -26,9 +26,7 @@ function Nav(props) {
         </a>
       </nav>
       <nav className='header__right'>
-        <span className='user'>
-          <img src={avatar} alt='user avatar' />
-        </span>
+        <img className='user' src={avatar} alt='user avatar' />
       </nav>
     </header>
   );

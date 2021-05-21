@@ -1,4 +1,5 @@
 import ChannelPreview from "../ChannelPreview/ChannelPreview";
+import "./ChannelList.css";
 
 function ChannelList(props) {
   const channels = [
@@ -37,8 +38,7 @@ function ChannelList(props) {
   return (
     <div className='Channel-List'>
       <h1>{props.header}</h1>
-
-      {generateChannels(channels)}
+      <div className='channels'>{generateChannels(channels)}</div>
     </div>
   );
 }

@@ -1,0 +1,8 @@
+.Channel-List {
+  padding: 20px;
+  border-bottom: 2px solid hsla(0, 0%, 100%, 0.3);
+}
+
+.channels {
+  display: flex;
+}

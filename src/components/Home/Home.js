@@ -1,7 +1,7 @@
 import ChannelList from "../ChannelList/ChannelList";
 
 function Home(props) {
-  const { username, avatar } = props.user;
+  const { username } = props.user;
 
   return (
     <div className='Home'>
