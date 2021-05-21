@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from "./components/Nav/Nav";
+
+import "./App.css";
 
 function App() {
+  const user = {
+    username: "Dalton",
+    avatar:
+      "https://static-cdn.jtvnw.net/jtv_user_pictures/0ed35a26-2358-48d7-a03d-a7bf4b08a64b-profile_image-70x70.png",
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Nav user={user} />
     </div>
   );
 }

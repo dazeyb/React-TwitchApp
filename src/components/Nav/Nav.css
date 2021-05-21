@@ -1,0 +1,28 @@
+.header {
+  background-color: #18181b;
+  height: 50px;
+  color: #e2e2e5;
+  font-size: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  padding: 0 10px;
+}
+
+.header__left .nav__item {
+  padding: 0 10px;
+  color: #e2e2e5;
+  text-decoration: none;
+}
+
+.header__left .nav__item:hover {
+  background-color: #27272c;
+  color: #9147ff;
+}
+
+.header__right {
+  margin-left: auto;
+}
